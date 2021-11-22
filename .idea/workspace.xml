@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88cd0b59-3fc4-4a01-bfaa-58aaf2c12c6f" name="Changes" comment="opencv/modules/videoio/src/cap_v4l.cpp (893) open VIDEOIO(V4L2:/dev/video0): can't open camera by index" />
+    <list default="true" id="88cd0b59-3fc4-4a01-bfaa-58aaf2c12c6f" name="Changes" comment="feat: print when the webcam is starting and when it is done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/master" />
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Kim 金可明 &lt;koomen@protonmail.com&gt;" />
+      </list>
+    </option>
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -45,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637604831882</updated>
-      <workItem from="1637604836188" duration="6892000" />
+      <workItem from="1637604836188" duration="7056000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1637605388700</created>
@@ -117,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637609581607</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: print when the webcam is starting and when it is done">
+      <created>1637615331783</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1637615331783</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +155,7 @@
     <MESSAGE value=".config file" />
     <MESSAGE value="Aptfile Req" />
     <MESSAGE value="opencv/modules/videoio/src/cap_v4l.cpp (893) open VIDEOIO(V4L2:/dev/video0): can't open camera by index" />
-    <option name="LAST_COMMIT_MESSAGE" value="opencv/modules/videoio/src/cap_v4l.cpp (893) open VIDEOIO(V4L2:/dev/video0): can't open camera by index" />
+    <MESSAGE value="feat: print when the webcam is starting and when it is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: print when the webcam is starting and when it is done" />
   </component>
 </project>
