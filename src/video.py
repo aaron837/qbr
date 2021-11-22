@@ -30,7 +30,7 @@ class Webcam:
 
     def __init__(self):
         self.colors_to_calibrate = ['green', 'red', 'blue', 'orange', 'white', 'yellow']
-        self.cam = cv2.VideoCapture(-1)
+        self.cam = cv2.VideoCapture(0)
         self.average_sticker_colors = {}
         self.result_state = {}
 
