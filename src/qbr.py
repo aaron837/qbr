@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # vim: fenc=utf-8 ts=4 sw=4 et
-
+import ctypes
 import sys
 import tokenize
 import webbrowser
@@ -50,7 +50,7 @@ class Qbr:
             length = len(algorithm.split(' '))
 
         except Exception:
-            self.print_E_and_exit(E_INCORRECTLY_SCANNED)
+           self.print_E_and_exit(E_INCORRECTLY_SCANNED)
 
         print(i18n.t('startingPosition'))
         print(i18n.t('moves', moves=length))
@@ -108,8 +108,19 @@ class Qbr:
         if code == E_INCORRECTLY_SCANNED:
             print('\033[0;33m[{}] {}'.format(i18n.t('error'), i18n.t('haventScannedAllSides')))
             print('{}\033[0m'.format(i18n.t('pleaseTryAgain')))
+            body_Str = "Not all sides scanned or incorrectly scanned. Please try Again."
+
+            title_Str = "Error"
+
+            os.system("osascript -e \'Tell application \"System Events\" to display dialog \""+body_Str+"\" with title \""+title_Str+"\"\'")
+
         elif code == E_ALREADY_SOLVED:
             print('\033[0;33m[{}] {}'.format(i18n.t('error'), i18n.t('cubeAlreadySolved')))
+            body_Str = "Cube is already solved"
+
+            title_Str = "Title"
+
+            os.system("osascript -e \'Tell application \"System Events\" to display dialog \""+body_Str+"\" with title \""+title_Str+"\"\'")
         sys.exit(code)
 
 
