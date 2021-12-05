@@ -510,7 +510,7 @@ class Webcam:
                 self.draw_scanned_sides(frame)
                 self.draw_2d_cube_state(frame)
 
-            cv2.imshow("Qbr - Rubik's cube solver", frame)
+            cv2.imshow("CMPE 131 - Rubik's Cube Scanner app", frame)
 
         self.cam.release()
         cv2.destroyAllWindows()
